@@ -11,9 +11,32 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+        		/* CSS to center the video */
+        		.video-container {
+            		display: flex;
+            		justify-content: center;
+            		align-items: center;
+            		height: 100vh; /* Centers the video vertically */
+            		background-color: #f0f0f0; /* Background color for demonstration */
+        		}
+
+        		/* Adjust the size of the iframe */
+        		.video-container iframe {
+           		width: 75%; /* Adjust this value as needed */
+            		height: auto; /* Adjusts height proportionally to width */
+        		}
+    		</style>
+		
 	</head>
 	<body class="is-preload">
-
+		
+		<!-- Video container to center the video -->
+			<div class="video-container">
+   			<!-- Replace 'VIDEO_ID' with the actual ID of your YouTube video -->
+   			<iframe src="https://www.youtube.com/watch?v=k2SEmx28XNk" frameborder="0" allowfullscreen></iframe>
+			</div>
+		
 		<!-- Page Wrapper -->
 			<div id="page-wrapper">
 
